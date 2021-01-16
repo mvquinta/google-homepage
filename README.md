@@ -1,0 +1,1 @@
+The Odin Project mini-project, rebuild and clone Google Homepage using HTML and CSS.
