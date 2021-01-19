@@ -1,0 +1,213 @@
+/*This is my main CSS document*/
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:active {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/*NAVBAR STYLE*/
+
+#navbar {
+    margin-top: 10px;
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*float: right;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signin-top-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#gmail-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#images-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#menu-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#signin-top-btn {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    font-size: 13px;
+    outline: none;
+    background: #4285f4;
+    color: #ffffff;
+    padding: 7px 12px;
+    border-radius: 2px;
+    cursor: default;
+}
+
+
+/*MAIN STYLE*/
+
+#main {
+    flex: 1; /*short for flex: 1 1 0; grow shrink basis*/
+}
+
+#logo-img {
+    display: block; /*starts on a new line, and takes up the whole width*/
+    margin: 0px auto; /*short for: top+bottom 0px & righ+left auto*/
+    margin-top: 160px;
+}
+
+#main-search {
+    width: 500px;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#search-box {
+    display: block;
+    border: 1px solid rgb(221, 221, 221);
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    transition: box-shadow 100ms;
+    outline: none; 
+}
+
+#search-box:hover{
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+                                0 0 2px rgba(0, 0, 0, 0.05), 
+                                0 0 3px rgba(0, 0, 0, 0.05),
+                                0 0 4px rgba(0, 0, 0, 0.05),
+                                0 0 5px rgba(0, 0, 0, 0.05),
+                                0 0 4px rgba(0, 0, 0, 0.05),
+                                0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+#search-box:focus{
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+                                0 0 2px rgba(0, 0, 0, 0.05), 
+                                0 0 3px rgba(0, 0, 0, 0.05),
+                                0 0 4px rgba(0, 0, 0, 0.05),
+                                0 0 5px rgba(0, 0, 0, 0.05),
+                                0 0 4px rgba(0, 0, 0, 0.05),
+                                0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+#search-img {
+    width: 20px;
+    opacity: 0.4;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+
+
+#search-btn, #lucky-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 30px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;    
+}
+
+#search-btn:hover, #lucky-btn:hover {
+    border: 2px solid rgba(0, 0, 0, 0.05)
+}
+
+#main-lang {
+    text-align: center;
+    color: #202124;
+}
+
+#main-lang a {
+    margin-left: 5px;
+    color: #1a0dab;
+}
+
+
+/*FOOTER STYLE*/
+
+footer {
+    border-top: 1px solid rgb(211, 211, 211);
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+footer h4 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: left;
+    line-height: 40px;
+    padding-left: 25px;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+    display: inline-block;
+    padding: 12px 12px;
+}
+
+#footer-lnks {
+    display: flex;
+    border-top: 1px solid rgb(211, 211, 211);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer-lnks-line1 {
+    padding-left: 15px;
+}
+
+#footer-lnks-line2 {
+    padding-right: 20px;
+}
